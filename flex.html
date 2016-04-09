@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The JPEG Image</title>
+    
+    <style>
+        
+        h1 {
+            color: blue;    /* Sets text color for h1 to blue */
+        }
+        
+        body {
+            background-color: lightgrey;    /* Sets the background color to light grey for the entire body */
+        }    
+        .wrapper {
+            display: flex;        /* Creates a flex wrapper that will contain our columns and auto fit to the page */
+        }
+        
+        .col {
+            flex: 1; /* Ask Erty */
+            
+        }
+        
+        .col1 {
+            flex: 3; /*This sets a size ratio for the column wrt the other columns in our wrapper */
+            border: 1px dotted blue;
+            margin: 1px; /* Provides the space btw columns */
+            background-color: white;
+        }
+        
+        .col2 {
+            flex: 5;;
+            border: 1px dotted blue;
+            margin: 1px; /* Provides the space btw columns */
+            padding: 10px;
+            background-color: white;
+        }
+        
+        .col3 {
+            flex: 2;
+            border: 1px dotted blue;
+            margin: 1px; /* Provides the space btw columns */
+            background-color: white;
+            padding-left: 50px;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+        .picture {
+            padding: 15px 15px 15px 15px;
+        }
+        .text {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+        }
+        
+        .text2 {
+            padding-left: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .font-size {
+            font-size: 14px;
+        }
+    
+    </style>
+</head>
+<body>
+   
+   <h1>The JPEG Image</h1>
+   
+   
+   
+   <div class='wrapper'>
+       <div class='col col1'>
+           <p class="text">The term "JPEG" is an acronym for the Joint Photographic Experts Group, which created the standard. The MIME media type for JPEG is image/jpeg, except in older Internet Explorer versions, which provides a MIME type of image/pjpeg when uploading JPEG images. JPEG files usually have a filename extension of .jpg or .jpeg</p>
+           
+           <p class="text">JPEG/JFIF supports a maximum image size of 65,535 x 65,535 pixels, hence up to 4 gigapixels (for an aspect ratio of 1:1).</p>
+           
+           <p class="text">(From <br><a href="https://en.wikipedia.org/wiki/JPEG">https://en.wikipedia.org/wiki/JPEG)</a></p>
+       </div>
+       
+       <div class='col col2'> 
+           <img class="picture" src="http://jpeg.org/images/jpeg-home.jpg">
+
+           <p class="text2">(Image from <a href="http://jpeg.org/images/jpeg-home.jpg">http://jpeg.org/images/jpeg-home.jpg)</a></p>
+       </div>
+       
+       <div class='col col3'>
+           <h3 class="bold">Other Image Types</h3>
+           <ul>
+               <li>jpg</li>
+               <li>png</li>
+               <li>gif</li>
+               <li>bmp</li>
+           </ul>
+       </div>
+    </div>
+    
+    <div class="footer">
+        <p class="font_size">&copy; Stolen Blatantly From Wikipeida</p>
+    </div>
+</body>
+</html>
